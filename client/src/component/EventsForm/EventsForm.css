@@ -1,0 +1,152 @@
+.form_container{
+  position: absolute;
+  bottom: 1rem;
+  right: 3rem;
+  min-width: 200px;
+  max-width: 400px;
+  max-height: 350px;
+  text-align: left;
+  font-family: monospace;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background-color: #ffb100;
+  color: white;
+  z-index: 10;
+  box-shadow: 1px 19px 49px grey;
+}
+.title_input{
+  min-height: 50px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  font-size: 1.2rem;
+  border: none;
+  background-color: transparent;
+  transition: all 0.5s ease-out;
+  color: white;
+}
+.title_input::placeholder{
+  font-size: 1.2rem;
+  color: white;
+  font-family: monospace;
+}
+.title_input:focus{
+  border-bottom: 1px solid #e3e8e1;
+}
+.form_title{
+}
+.name{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.save_btn{
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  padding: 2px 24px;
+}
+.time{
+  display: flex;
+  margin-bottom: 1rem;
+}
+.save_btn:hover{
+  background-color: white;
+  color: black;
+}
+.close_btn{
+  cursor: pointer;
+}
+.form_date{
+  margin: 0.625rem 0;
+}
+input[type =date]{
+  border: none;
+  color: #2a2c2d;
+  font-size: 14px;
+  font-family: helvetica;
+  width: 220px;
+  background-color: transparent;
+  outline: none;
+}
+input[type=date]::-webkit-datetime-edit-fields-wrapper {
+  display: flex;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+  background-color: #f2f4f5;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+input[type=date]::-webkit-datetime-edit-day-field{
+  background-color: #f2f4f5;
+  border-radius: 15%;
+  padding: 19px 13px;
+  
+}
+input[type=date]::-webkit-datetime-edit-year-field{
+  background-color: #f2f4f5;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+input[type=date]::-webkit-datetime-edit-text{
+  padding: 19px 4px;
+}
+/*  */
+input[type=time] {
+  border: none;
+  color: #2a2c2d;
+  font-size: 14px;
+  font-family: helvetica;
+  width: 180px;
+  background-color: transparent;
+  outline: none;
+}
+input[type=time]::-webkit-datetime-edit-fields-wrapper {
+  display: flex;
+}
+input[type=time]::-webkit-datetime-edit-text {
+  padding: 19px 4px;
+}
+input[type=time]::-webkit-datetime-edit-hour-field {
+  background-color: #f2f4f5;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+input[type=time]::-webkit-datetime-edit-minute-field {
+  background-color: #f2f4f5;
+  border-radius: 15%;
+  padding: 19px 13px;
+}
+input[type=time]::-webkit-datetime-edit-ampm-field {
+  background-color: #7155d3;
+  border-radius: 15%;
+  color: #fff;
+  padding: 19px 13px;
+}
+
+@media(max-width:1024px){
+  .form_container{
+    right: 0%;
+    padding: 2rem;
+  }
+  input[type=time]{
+    font-size: 10px;
+  }
+}
+@media(max-width:360px){
+  .form_container{
+    width: 100%;
+  }
+  input[type=time]{
+    width: 120px;
+  }
+  input[type=time]::-webkit-datetime-edit-ampm-field {
+    padding: 19px 5px;
+  }
+  input[type=time]::-webkit-datetime-edit-minute-field {
+    padding: 19px 5px;
+  }
+  input[type=time]::-webkit-datetime-edit-hour-field {
+    padding: 19px 5px;
+  }
+}

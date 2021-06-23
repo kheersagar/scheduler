@@ -1,0 +1,57 @@
+.events_container{
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  border-radius: 8px;
+  margin: 3rem auto;
+  max-height: 350px;
+  overflow-y: scroll;
+  box-shadow: 1px 19px 49px grey;
+}
+.events_heading{
+  font-size: 2rem;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+.event{
+  text-align: left;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.625rem;
+  border-radius: 8px;
+  background: #ffb100;
+  color: black;
+}
+.event_title{
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+.event_filter{
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 1px 6px 16px grey;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: white;
+}
+.all_event,.week_event{
+  width: 108px;
+  height: 50px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  box-shadow: 1px 4px 4px grey;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.week_wise_event{
+  box-shadow: 1px 8px 16px gainsboro;
+  margin: 1rem;
+    padding: 0.5rem;
+}
+@media(max-width:1024px){
+  .events_container{
+    margin: 1rem;
+  }
+}
